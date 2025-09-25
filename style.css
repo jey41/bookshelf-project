@@ -1,0 +1,182 @@
+/* ===== Reset & Base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+/* ===== Container Tengah ===== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* ===== Header ===== */
+header {
+  background: #6c63ff;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* ===== Main Content ===== */
+main {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ===== Sections ===== */
+section {
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* ===== Forms ===== */
+form {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-left: 0.5rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* ===== Buttons ===== */
+#bookFormSubmit,
+#searchSubmit {
+  background: #6c63ff;
+  color: white;
+}
+
+#bookFormSubmit:hover,
+#searchSubmit:hover {
+  background: #5548e0;
+}
+
+button[data-testid="bookItemIsCompleteButton"] {
+  background: #00c49a;
+  color: white;
+}
+
+button[data-testid="bookItemIsCompleteButton"]:hover {
+  background: #00a07d;
+}
+
+button[data-testid="bookItemDeleteButton"] {
+  background: #ff6b6b;
+  color: white;
+}
+
+button[data-testid="bookItemDeleteButton"]:hover {
+  background: #e85a5a;
+}
+
+button[data-testid="bookItemEditButton"] {
+  background: #ffa500;
+  color: white;
+}
+
+button[data-testid="bookItemEditButton"]:hover {
+  background: #e69500;
+}
+
+/* ===== Book Cards ===== */
+.book-card {
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.01);
+}
+
+.book-card h3 {
+  margin-bottom: 0.5rem;
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.book-card p {
+  margin-bottom: 0.4rem;
+  color: #555;
+}
+
+.book-card .actions {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== Rak Buku ===== */
+#incompleteBookList,
+#completeBookList {
+  min-height: 100px;
+}
